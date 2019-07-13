@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/submit/" method="POST" >
+Enter URL: <input type="text" name='url_text'><br>
+
+<input name="form" type="submit" value="Submit" >
+</form>
+
+
+{% for i in insert_status %}
+<p> {{ i.author}} : {{ i.review_text}}</p>
+
+{% endfor %}
+
+</body>
+</html>
